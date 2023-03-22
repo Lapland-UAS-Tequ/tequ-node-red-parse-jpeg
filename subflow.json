@@ -2,8 +2,8 @@
     "id": "6df45eeb0316ace1",
     "type": "subflow",
     "name": "Parse JPEG",
-    "info": "Parses JPEG image and adds metadata to msg.\r\n\r\nSupports parsing JPEG images from raw MJPEG stream.\r\n\r\nReads or adds to msg:\r\n - Basic image info (width,height,size) \r\n - Exif data\r\n - Local timestamp, UTC timestamp, Unix timestamp \r\n - Thumbnail of the original image (optional)\r\n - Coordinates (if given)\r\n - Serial number \r\n\r\n Output message is formatted to Tequ-API compatible format.\r\n\r\nDependencies\r\n- https://flows.nodered.org/node/node-red-contrib-msg-speed\r\n- https://flows.nodered.org/node/node-red-contrib-moment\r\n- https://flows.nodered.org/node/node-red-node-exif\r\n- https://flows.nodered.org/node/node-red-contrib-image-info\r\n- https://www.npmjs.com/package/uuid\r\n- https://www.npmjs.com/package/sharp\r\n",
-    "category": "Tequ",
+    "info": "Parses JPEG image and adds metadata to msg.\r\n\r\nSupports parsing JPEG images from raw MJPEG stream.\r\n\r\nAdds to msg:\r\n - Basic image info (width,height,size) \r\n - Exif data\r\n - Local timestamp, UTC timestamp, Unix timestamp \r\n - Thumbnail of the original image (optional, uses sharp)\r\n - Coordinates (if given)\r\n - Serial number \r\n\r\n Output message is formatted to Tequ-API compatible format.\r\n\r\nDependencies\r\n- https://flows.nodered.org/node/node-red-contrib-msg-speed\r\n- https://flows.nodered.org/node/node-red-contrib-moment\r\n- https://flows.nodered.org/node/node-red-node-exif\r\n- https://flows.nodered.org/node/node-red-contrib-image-info\r\n- https://www.npmjs.com/package/uuid\r\n- https://www.npmjs.com/package/sharp\r\n",
+    "category": "Tequ-API Client",
     "in": [
         {
             "x": 40,
@@ -121,7 +121,7 @@
         "type": "tequ-node-red-parse-jpeg",
         "version": "0.0.1",
         "author": "juha.autioniemi@lapinamk.fi",
-        "desc": "Parse JPEG and add metadata to image",
+        "desc": "Parse JPEG and extract metadata.",
         "keywords": "tequ-ai",
         "license": "MIT"
     },
@@ -530,10 +530,10 @@
         {
             "id": "96928f9d3de22473",
             "type": "subflow:6df45eeb0316ace1",
-            "z": "213d881cf0833211",
+            "z": "7b248573a2bd55b0",
             "name": "",
-            "x": 390,
-            "y": 440,
+            "x": 330,
+            "y": 480,
             "wires": [
                 []
             ]

@@ -1,13 +1,13 @@
 tequ-node-red-parse-jpeg
 =====================
 
-Parse JPEG and add metadata to image
+Parse JPEG and extract metadata.
 
 ## Install
 
 Run the following command in your Node-RED user directory - typically `~/.node-red`
 
-        npm install Lapland-UAS-Tequ/tequ-node-red-parse-jpeg
+        npm install tequ-node-red-parse-jpeg
 
 ## Information
 
@@ -15,11 +15,11 @@ Parses JPEG image and adds metadata to msg.
 
 Supports parsing JPEG images from raw MJPEG stream.
 
-Reads or adds to msg:
+Adds to msg:
  - Basic image info (width,height,size) 
  - Exif data
  - Local timestamp, UTC timestamp, Unix timestamp 
- - Thumbnail of the original image (optional)
+ - Thumbnail of the original image (optional, uses sharp)
  - Coordinates (if given)
  - Serial number 
 
