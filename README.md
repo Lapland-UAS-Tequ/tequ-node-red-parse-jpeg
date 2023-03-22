@@ -26,10 +26,10 @@ Reads or adds to msg:
  Output message is formatted to Tequ-API compatible format.
 
 Dependencies
--https://flows.nodered.org/node/node-red-contrib-msg-speed
--https://flows.nodered.org/node/node-red-contrib-moment
--https://flows.nodered.org/node/node-red-node-exif
--https://flows.nodered.org/node/node-red-contrib-image-info
--https://www.npmjs.com/package/uuid
--https://www.npmjs.com/package/sharp
+- https://flows.nodered.org/node/node-red-contrib-msg-speed
+- https://flows.nodered.org/node/node-red-contrib-moment
+- https://flows.nodered.org/node/node-red-node-exif
+- https://flows.nodered.org/node/node-red-contrib-image-info
+- https://www.npmjs.com/package/uuid
+- https://www.npmjs.com/package/sharp
 

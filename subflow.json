@@ -2,7 +2,7 @@
     "id": "6df45eeb0316ace1",
     "type": "subflow",
     "name": "Parse JPEG",
-    "info": "Parses JPEG image and adds metadata to msg.\r\n\r\nSupports parsing JPEG images from raw MJPEG stream.\r\n\r\nReads or adds to msg:\r\n - Basic image info (width,height,size) \r\n - Exif data\r\n - Local timestamp, UTC timestamp, Unix timestamp \r\n - Thumbnail of the original image (optional)\r\n - Coordinates (if given)\r\n - Serial number \r\n\r\n Output message is formatted to Tequ-API compatible format.\r\n\r\nDependencies\r\n-https://flows.nodered.org/node/node-red-contrib-msg-speed\r\n-https://flows.nodered.org/node/node-red-contrib-moment\r\n-https://flows.nodered.org/node/node-red-node-exif\r\n-https://flows.nodered.org/node/node-red-contrib-image-info\r\n-https://www.npmjs.com/package/uuid\r\n-https://www.npmjs.com/package/sharp\r\n",
+    "info": "Parses JPEG image and adds metadata to msg.\r\n\r\nSupports parsing JPEG images from raw MJPEG stream.\r\n\r\nReads or adds to msg:\r\n - Basic image info (width,height,size) \r\n - Exif data\r\n - Local timestamp, UTC timestamp, Unix timestamp \r\n - Thumbnail of the original image (optional)\r\n - Coordinates (if given)\r\n - Serial number \r\n\r\n Output message is formatted to Tequ-API compatible format.\r\n\r\nDependencies\r\n- https://flows.nodered.org/node/node-red-contrib-msg-speed\r\n- https://flows.nodered.org/node/node-red-contrib-moment\r\n- https://flows.nodered.org/node/node-red-node-exif\r\n- https://flows.nodered.org/node/node-red-contrib-image-info\r\n- https://www.npmjs.com/package/uuid\r\n- https://www.npmjs.com/package/sharp\r\n",
     "category": "Tequ",
     "in": [
         {
@@ -528,24 +528,14 @@
             ]
         },
         {
-            "id": "2eb47317741890f2",
+            "id": "96928f9d3de22473",
             "type": "subflow:6df45eeb0316ace1",
             "z": "213d881cf0833211",
             "name": "",
-            "env": [
-                {
-                    "name": "thumbnail",
-                    "value": "true",
-                    "type": "bool"
-                }
-            ],
-            "x": 330,
-            "y": 300,
+            "x": 390,
+            "y": 440,
             "wires": [
-                [
-                    "b1583abefe09f393",
-                    "08e1e0cc8563f901"
-                ]
+                []
             ]
         }
     ]
